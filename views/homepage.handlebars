@@ -1,0 +1,19 @@
+<nav>
+    <a href="/">Homepage</a>
+    <a href="#">Dashboard</a>
+    <a href="/login">Login</a>
+    <a href="/signup">Sign up</a>
+</nav>
+<ol class="post-list">
+  {{#each posts}}
+  <li>
+    <article class="post">
+        <a href="#" class="title">{{title}}</a>
+        <p>{{user.username}} on {{created_at}}</p>
+      <div class="meta">
+        {{content}} 
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>
