@@ -1,7 +1,7 @@
-
 <div class="bg-success px-3 py-5 text-dark">
-<h1 class="text-light bg-dark rounded px-3 py-3 pl-10 bg-opacity-75 shadow-lg">Ultimate Tech Blog</h1>
+<h1 class="text-light bg-dark rounded px-3 py-3 pl-10 bg-opacity-75 shadow-lg">Your Dashboard</h1>
 </div>
+
 <ol class="post-list">
   {{#each posts}}
   <li class="h-100 px-5 py-3 bg-light bg-opacity-50 border rounded-3 my-3">
@@ -19,3 +19,8 @@
   {{/each}}
 </ol>
 
+<div>
+    <a class="btn btn-outline-dark my-3" href="/dashboardcreate">Add Post</a>
+</div>
+
+<script src="/js/dashboard.js"></script>

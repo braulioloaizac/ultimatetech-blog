@@ -1,9 +1,8 @@
-<nav>
-    <a href="/">Homepage</a>
-    <a href="#">Dashboard</a>
-</nav>
 
-<form class="login-form">
+<div class="bg-success px-3 py-5 text-dark">
+<h1 class="text-light bg-dark rounded px-3 py-3 pl-10 bg-opacity-75 shadow-lg">Log in</h1>
+</div>
+<form class="login-form h-100 px-5 py-3 bg-light bg-opacity-50 border rounded-3 my-3">
   <div>
     <label for="username-login">Username:</label>
     <input type="text" id="username-login" />
@@ -13,22 +12,11 @@
     <input type="password" id="password-login" />
   </div>
   <div>
-    <button type="submit">login</button>
+    <button class="btn btn-outline-dark my-3" type="submit">Log in</button>
   </div>
+  <a href="/signup">Sign Up instead</a>
 </form>
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">Username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+
 
 <script src="/js/login.js"></script>
