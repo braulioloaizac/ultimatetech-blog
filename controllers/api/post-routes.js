@@ -36,4 +36,26 @@ router.post('/', (req, res) => {
 });
 
 
+router.get('/:id', (req, res) => {
+  console.log('======================');
+  Post.findOne({
+    where: {
+      id: req.params.id
+    },
+    attributes: ['id', 'title', 'content', 'user_id', 'created_at'],
+    include: [
+      {
+        model: User,
+        attributes: ['id', 'username']
+      }]
+    
+  })
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
 module.exports = router;
